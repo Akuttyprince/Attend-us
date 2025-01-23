@@ -9,6 +9,7 @@ const Leave_Od = mongoose.SchemaType({
     filetype: { type : String , required : true},
     filePath : { type : String , required : true },
     fileSize : {type: Number, required : true},
+    status :{type: string , required:true, enum:['accepted', 'notaccepted'], default: 'notaccepted'},
 })
 
 
